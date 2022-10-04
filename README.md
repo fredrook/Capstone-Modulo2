@@ -1,3 +1,4 @@
+![Kenzie Habit](https://user-images.githubusercontent.com/102538748/193879281-004ff827-1474-4428-bb09-8bf7040bd183.jpg)
 <div style='background-color:white'>
 
 </div>
