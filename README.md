@@ -30,7 +30,7 @@ SENHA: 8981b282d9497f249fff13dcbda023ee
 
 ## Ferramentas Utilizadas
 
-<img align="center" alt="GitHub" src="https://i.ibb.co/Ctkc2L3/github.png">
+<img align="center" alt="GitHub" src="https://i.ibb.co/BjgRfHP/github-1.png">
 
 <img align="center" alt="Trello" src="https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white">
  
