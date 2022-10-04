@@ -612,9 +612,7 @@ Caso você tente agendar com o mesmo médico, receberá este erro:
 
  <img align="center" alt="css" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 
-   <img align="center" alt="react" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-
-   <img align="center" alt="Typescript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
+  <a href="https://ibb.co/F86VtPM"><img src="https://i.ibb.co/2cqNBbQ/Java-Script-Ecma6.png" alt="Java-Script-Ecma6" border="0"></a>
 
    
 </div></br>
@@ -624,8 +622,6 @@ Caso você tente agendar com o mesmo médico, receberá este erro:
  <img align="center" alt="Typescript" src="https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white">
  
  <img align="center" alt="Typescript" src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white">
- 
- <img align="center" alt="Typescript" src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white">
   
   <img align="center" alt="Typescript" src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
 
@@ -633,11 +629,11 @@ Caso você tente agendar com o mesmo médico, receberá este erro:
 ## Equipe
 
 <ul>
-<li><a href="https://github.com/annekarolle">Anne K R Oliveira - Scrum Master</a></li>
-<li><a href="https://github.com/DnlGalvan">Daniel Galvan - Tech Lead</a></li>
+<li><a href="https://github.com/annekarolle">Frederico Rook Chaves - Scrum Master</a></li>
+<li><a href="https://github.com/DnlGalvan">Thiago Araujo Scherer - Tech Lead</a></li>
 <li><a href="https://github.com/fredericosafebox" >Frederico Costa - Product Owner</a></li>
-<li><a href="https://github.com/fredrook">Frederico Rook Chaves - Quality Assurance </a></li>
-<li><a href="https://github.com/marcuspvh">Marcus Roberto Ribeiro - Quality Assurance</a></li>
+<li><a href="https://github.com/fredrook">Ricardo Martins - Quality Assurance </a></li>
+<li><a href="https://github.com/marcuspvh">Breno Almeida - Quality Assurance</a></li>
 </ul>
 
 
