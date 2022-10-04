@@ -3,9 +3,6 @@ import { DomCriarTask } from "../models/tasks.models.js"
 import { Homepage } from "../models/Homepage.model.js";
 import Perfil from "../models/editPerfilmodel.js";
 
-/* const all = await Api.readAll() */
-
-
 Homepage.homepageSetter()
 
 // NOME E IMAGEM DO USUÁRIO
@@ -35,7 +32,6 @@ buttonCriar.addEventListener(("click"), () => {
 
 buttonEditPerfil.addEventListener('click', () => {
 
-    console.log('chegando')
     Perfil.editPerfil();
     document.getElementById("dropdown-content").style.display = "none";
     document.getElementById("modal").style.display = "flex";

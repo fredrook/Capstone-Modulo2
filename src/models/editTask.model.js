@@ -57,7 +57,6 @@ export class EditTask {
             taskStatusCheckbox.checked = true
             taskStatusCheckbox.disabled = true
         }
-        /* taskStatusCheckbox.name = "habit_status" */
         
 
         //CRIA LABEL PARA OS INPUTS
