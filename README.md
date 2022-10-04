@@ -46,5 +46,5 @@ SENHA: 8981b282d9497f249fff13dcbda023ee
 <li><a href="https://github.com/DnlGalvan">Thiago Araujo Scherer - Tech Lead</a></li>
 <li><a href="https://github.com/fredericosafebox" >Frederico Costa - Product Owner</a></li>
 <li><a href="https://github.com/fredrook">Ricardo Martins - Quality Assurance </a></li>
-<li><a href="https://github.com/marcuspvh">Breno Almeida - Quality Assurance</a></li>
+<li><a href="*">Breno Almeida - Quality Assurance</a></li>
 </ul>
