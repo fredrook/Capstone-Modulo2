@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MODAL CRIAR HABITO</title>
+
+  <!-- CSS -->
+<!--   <link rel="stylesheet" href="../css/reset.css"> -->
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/modal.criarHabito.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"/>
+
+  <!-- GOOGLE FONTS -->
+
+</head>
+
+<body>
+
+  <main>
+
+    <div class="modalCriar">
+            <div class="modal__inner">
+
+                <button type="button" class="modal__close">
+                        <img src="../assets/X.png" alt="Fechar!"/>
+                </button>
+            
+                
+                <form class="modal__form">
+                    <h2>Criar hábito</h2>
+                    <h3 class="h3title">Título</h3>
+                    <input type="title" name="title" id="title" placeholder="Digitar título"/>
+                   
+                    <h3 class="h3description">Descrição</h3>
+                    <input type="description" name="description" id="description"
+                    placeholder="Digitar descrição"/>
+
+                    <h3 class="h3category">Categoria</h3>
+                    <select class="breed" name="breed" id="breed">
+                      <option  value="Casa">&#xf015; Casa</option>
+                      <option  value="Estudo">&#xf02d; Estudo</option>
+                      <option  value="Lazer">&#xf06c; Lazer</option>
+                      <option  value="Trabalho">&#xf0b1; Trabalho</option>
+                      <option  value="Saúde">&#xf21e; Saúde</option>
+                  </select>
+
+                    <button type="button" class="button button__primary button--Bcolor">Inserir</button>
+                </form>
+
+            </div>
+    </div>
+
+  </main>
+
+</body>
+
+</html>

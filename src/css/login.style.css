@@ -1,0 +1,179 @@
+/* Cores: usar com RGB ou RGBA */
+:root {
+    --kenzieDarkBlue: 65, 80, 210;          /* #4150D2 */
+    --kenzieLightBlue: 65, 90, 243;         /* #415AF3 */
+    --pureWhite: 255, 255, 255;             /* #FFFFFF */
+    --fontColorGrey: 33, 37, 41;            /* #212529 */
+    --fontColorLightWhite: 233, 236, 239;   /* #E9ECEF */
+    --inputGreyBackground: 241, 243, 245;   /* #F1F3F5 */
+    --labelGrey: 52, 58, 64;                /* #343A40 */
+    --buttonRedBackground: 230, 68, 69;     /* #E64445 */
+    --pureBlack: 0, 0, 0;                   /* #000000 */
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container__landing {
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 1080px;
+    box-shadow: 0px 4px 40px -10px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+
+}
+
+.container__landing--welcomeMessageBox {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8% 5% 17% 5%;
+    background: rgb(var(--kenzieDarkBlue));
+    color: rgb(var(--pureWhite));
+}
+
+.container__landing--welcomeTitle {
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+.container__landing--welcomeSubTitle{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.container__landing--welcomeSubTitle span {
+    text-underline-offset: 5px;
+    text-decoration: underline;
+}
+
+.container__landing--welcomeAdvice {
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgb(var(--fontColorLightWhite))
+}
+
+.container__landing--welcomeFormBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    padding: 5%;
+}
+
+.container__landing--welcomeForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75%;
+    gap: 1rem;
+}
+
+.container__landing--welcomeFormTitle {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.container__landing--welcomeForm div {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.container__landing--welcomeForm div > label {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgb(var(--labelGrey));
+}
+
+.container__landing--welcomeForm div > input {
+    background: rgb(var(--inputGreyBackground));
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.container__landing--welcomeForm div > input:focus {
+    outline: none;
+    box-shadow: 0 0 5px 1px rgba(var(--kenzieLightBlue), 0.7);
+}
+
+.container__landing--welcomeForm button {
+    background: rgb(var(--kenzieLightBlue));
+    color: rgb(var(--pureWhite));
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.container__landing--welcomeForm button > img {
+    height: 1.8rem;
+}
+
+.error {
+    border: none;
+    outline: 2px solid red;
+    border-radius: 5px;
+}
+
+@media screen AND (max-width: 768px){
+    .container__landing {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container__landing--welcomeMessageBox {
+        display: none;
+    }
+
+    .container__landing--welcomeFormBox {
+        max-height: 60%;
+        width: 80%;
+        z-index: 2;
+        background: rgb(var(--pureWhite));
+        border-radius: 8px;
+        box-shadow: 0px 4px 40px -10px rgba(0, 0, 0, 0.25);
+    }
+
+    .container__landing--welcomeFormTitle {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen AND (max-width: 488px){
+    
+
+    .container__landing--welcomeFormBox {
+        width: 100%;
+    }
+}
+
+
+
+

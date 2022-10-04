@@ -1,0 +1,274 @@
+:root {
+    --kenzieDarkBlue: 65, 80, 210;
+    /* #4150D2 */
+    --kenzieLightBlue: 65, 90, 243;
+    /* #415AF3 */
+    --pureWhite: 255, 255, 255;
+    /* #FFFFFF */
+    --whitecomA: #A1A1A1;
+    --fontColorGrey: 33, 37, 41;
+    /*  #212529*/
+    --fontColorLightWhite: 233, 236, 239;
+    /* #E9ECEF */
+
+}
+
+figcaption {
+    display: none;
+}
+
+#header {
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#titleHeader {
+    font-size: 27px;
+    color: #415AF3;
+}
+
+.userImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 2rem;
+    outline: 4px solid #FFFFFF;
+    display: flex;
+}
+
+.userImgHeader {
+    outline: 2px solid #415AF3;
+}
+
+#sectionUser {
+    background-color: #415AF3;
+    width: 100%;
+    height: 90px;
+    padding-left: 20%;
+    display: flex;
+    align-items: center;
+}
+
+#userId {
+    margin-left: 8px;
+    margin-top: -50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#userImgSection {
+    width: 60px;
+    height: 60px;
+    border-radius: 2rem;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.userImg:hover {
+    outline: 4px solid #e6008ebd;
+
+}
+
+.dropdown {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 90%;
+    top: 65%;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+
+  .dropDownImg {
+    border-radius: 5px;
+    padding: 15px;
+    gap: 5px;
+    margin-bottom: 12px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .dropDownImg:hover {
+    background-color: #D7E4FB;
+  }
+
+#sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#divTitleContainer {
+    width: 88%;
+    margin-top: 30px;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#titleTasks {
+    font-size: 20px;
+}
+
+#divTasksButtons {
+    width: 28%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonNoDecoration {
+    border: none;
+    background-color: unset;
+}
+
+.buttonDecoration {
+    background-color: #415AF3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.buttons_Tasks {
+    width: 90px;
+    height: 32px;
+    padding: 2px;
+}
+
+.buttons_Tasks:hover {
+    cursor: pointer;
+}
+
+#divConatiner {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tableTasks {
+    width: 85%;
+    border-radius: 5px;
+}
+
+.textTasks {
+    font-size: 14px;
+}
+
+.textCategTasks {
+    font-size: 14px;
+    background-color: #D7E4FB;;
+    color: #415AF3;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.thHeader {
+    color: #a1a1a1;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.line {
+    height: 49px;
+    outline: 1px solid #A1A1A1;
+    text-align: left;
+}
+
+.block-with-text {
+    overflow: hidden;
+    position: relative;
+    line-height: 1em;
+    max-height: 1em;
+    text-align: left;
+}
+
+.block-with-text:before {
+    content: ' ';
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    background-color: #ffffff;
+    padding: 0 0px 0 0.25em;
+}
+
+td {
+    padding-left: 5px;
+}
+
+.checkbox {
+    margin-left: 35%;
+}
+
+.buttonEdit {
+    display: flex;
+
+}
+
+.buttonLoads {
+    margin-top: 35px;
+}
+
+.tdButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.table__button--icone {
+    height: 100%;
+}
+
+.buttonEdit {
+    height: 2rem;
+    width: 2rem;
+    font-size: 40px;
+    color: #A1A1A1;
+}
+
+@media screen and (max-width: 486px) {
+
+    .mobile {
+        width: 98%;
+    }
+
+    .divTitleContainerMobile {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #divConatiner{
+        width: 90%;
+    }
+
+    .mobileHidden {
+        display: none;
+    }
+}

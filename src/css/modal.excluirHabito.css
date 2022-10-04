@@ -1,0 +1,111 @@
+.modalExcluir__wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: rgba(1, 1, 1, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    top: 0;
+    left: 0;
+}
+
+.modalExcluir__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: rgb(var(--pureWhite));
+    height: 20rem;
+    width: 30rem;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.modalExcluir__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.modalExcluir__header--title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(var(--fontColorGrey));
+}
+
+.modalExcluir__header--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modalExcluir__header--button img {
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.modalExcluir__warnings {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.modalExcluir__warnings--title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(var(--pureBlack));
+}
+
+.modalExcluir__warnings--subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(var(--labelGrey));
+}
+
+
+.modalExcluir__options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.modalExcluir__options button {
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    transition: 0.5s;
+}
+
+.modalExcluir__options--cancel {
+    padding: 0.6rem 2.5rem;
+    background: rgb(var(--inputGreyBackground));
+    color: rgb(var(-labelGrey));
+}
+
+.modalExcluir__options--delete {
+    padding: 0.6rem 1.4rem;
+    color: white;
+    background-color: #E64445;;
+}
+
+.modalExcluir__options button:hover{
+    box-shadow: 0 0 5px 3px rgb(var(--labelGrey));
+    cursor: pointer;
+}
+
+@media screen AND (max-width: 464px) {
+    .modalExcluir__options {
+        flex-direction: column-reverse;
+        gap: 0.5rem;
+    }
+    
+}
+

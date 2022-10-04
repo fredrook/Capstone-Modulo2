@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/homepage.style.css">
+    <link rel="stylesheet" href="../css/modal.criarHabito.css">
+    <link rel="stylesheet" href="../css/modal.editarHabito.css">
+    <link rel="stylesheet" href="../css/modal.editarPerfil.css">
+    <link rel="stylesheet" href="../css/modal.excluirHabito.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"/>
+    <title>Kenzie Habit</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <h1 id="titleHeader" class="titleHeader">KenzieHabit</h1>
+        <figure>
+            <img id="userImgHeader" class="userImg userImgHeader" src="../assets/user.png" alt="Avatar do Usuário">
+            <figcaption hidden>Avatar do Usuário</figcaption>
+        </figure>
+    </header>
+    <main id="main">
+        <section id="sectionUser">
+            <figure class="dropdown">
+                <img id="userImgSection" class="userImg" src="../assets/user.png" alt="Avatar do Usuário">
+                <figcaption hidden>Avatar do Usuário</figcaption>
+                <div class="dropdown-content" id="dropdown-content">
+                    <div class="dropDownImg">
+                        <img src="../assets/human.png" alt="Ícone de passoa">
+                        <button class="buttonNoDecoration buttons_Tasks" id="buttonEditPerfil">Editar perfil</button>
+                    </div>
+                    <div class="dropDownImg">
+                        <img src="../assets/seta.png" alt="Ícone de seta">
+                        <button class="buttonNoDecoration buttons_Tasks" id="buttonExitApp">Sair do app</button>
+                    </div>
+                </div>
+            </figure>
+            <h2 id="userId">Júlia Silva Camargo</h2>
+        </section>
+
+
+        <section id="sectionContainer" class="conatiner">
+            <div id="divTitleContainer" class="divTitleContainerMobile">
+                <div id="divTitleTasks">
+                    <h2 id="titleTasks">Terefas</h2>
+                </div>
+                <div id="divTasksButtons">
+                    <button class="buttonNoDecoration buttons_Tasks" id="filterTodos">Todos</button>
+                    <button class="buttonNoDecoration buttons_Tasks" id="filterConcluidos">Concluídos</button>
+                    <button class="buttonDecoration buttons_Tasks" id="buttonCriar">Criar</button>
+                </div>
+            </div>
+
+            <div id="divConatiner">
+
+                <table id="tableTasks">
+                    <thead>
+                        <tr id="headerTable" class="line">
+                            <th class="thHeader th">
+                                <h4>Status</h4>
+                            </th>
+                            <th class="thHeader th">
+                                <h4>Título</h4>
+                            </th>
+                            <th class="thHeader  mobileHidden th">
+                                <h4>Descrição</h4>
+                            </th>
+                            <th class="thHeader  mobileHidden th">
+                                <h4>Categoria</h4>
+                            </th>
+                            <th class="thHeader th">
+                                <h4>Editar</h4>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableTasksBody"></tbody>
+                 
+                </table>
+            </div>
+            <div id="buttonLoadTable">
+                <button class="buttonDecoration buttonLoads">Carregar mais</button>
+            </div>
+        </section>
+
+<!--MODAL CRIAR HABITO-->
+        <div class="modalCriar">
+            <div class="modal__inner" id="criarHabito">
+
+                <button type="button" class="modal__close" id="closeCriarHabit">
+                    <img src="../assets/X.png" alt="Fechar!" />
+                </button>
+
+            </div>
+        </div>
+
+<!-- MODAL EDITAR HÁBITO -->
+        <!-- <div class="modal editarHabito">
+            <div class="modal__inner">
+
+            <button type="button" class="modal__close">
+                <img src="../assets/X.png" alt="Fechar!"/>
+            </button>
+    
+        </div>
+    </div> 
+
+<!- MODAL EDITAR Perfil -->
+    <div id="modal">
+         <!-- <div class="modal__inner">
+
+            <button type="button" class="modal__close">
+                    <img src="../assets/X.png" alt="Fechar!"/>
+            </button>
+        
+            
+            <form class="modal__form">
+                <h2>Editar perfil</h2>
+                <h3 class="h3title">Nome</h3>
+                <input type="title" name="title" id="title" placeholder="***PUXAR NOME DO USER AQUI***"/>
+               
+                <h3 class="h3description">URL da imagem do perfil </h3>
+                <input type="description" name="description" id="description"
+                placeholder="Digitar nova URL"/>
+
+                <button type="button" class="buttonSave buttonSaveText">Salvar alterações</button>
+                
+            </form>
+
+        </div>  -->
+    </div> 
+
+<!--MODAL EXCLUIR PERFIL-->
+        <!--    <div class="modalExcluir__wrapper modalExcluir">
+        <div class="modalExcluir__container">
+            <div class="modalExcluir__header">
+                <h4 class="modalExcluir__header--title">Excluir Hábito</h4>
+                <button class="modalExcluir__header--button">
+                    <img src="/src/assets/X.png" alt="close window">
+                </button>
+            </div>
+            <div class="modalExcluir__warnings">
+                <h3 class="modalExcluir__warnings--title">Certeza que deseja excluir este hábito?</h3>
+                <p class="modalExcluir__warnings--subtitle">Após executar essa ação não será possível desfazer</p>
+            </div>
+            <div class="modalExcluir__options">
+                <button class="modalExcluir__options--cancel">Cancelar</button>
+                <button class="modalExcluir__options--delete">Sim, excluir esse hábito</button>
+            </div>
+        </div>
+    </div>
+-->
+
+    </main>
+    <script type="module" src="../scripts/homepage.js"></script>
+    <script type="module" src="../models/editPerfilmodel.js"></script>
+</body>
+
+</html>

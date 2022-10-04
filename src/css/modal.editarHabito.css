@@ -1,0 +1,184 @@
+:root {
+    --kenzieDarkBlue: 65, 80, 210;          /* #4150D2 */
+    --kenzieLightBlue: 65, 90, 243;         /* #415AF3 */
+    --pureWhite: 255, 255, 255;             /* #FFFFFF */
+    --fontColorGrey: 33, 37, 41;            /* #212529 */
+    --fontColorLightWhite: 233, 236, 239;   /* #E9ECEF */
+    --inputGreyBackground: 241, 243, 245;   /* #F1F3F5 */
+    --labelGrey: 52, 58, 64;                /* #343A40 */
+    --backGroundButtonSave: 160, 173, 249;  /* #A0ADF9 */
+}
+
+.modalTaskEdit__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(var(--fontColorGrey), 0.65);
+    transition: 0.5s;
+}
+
+.modalTaskEdit__container{
+    width: 26rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgba(var(--pureWhite), 1);
+}
+
+.modalTaskEdit__form {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.modalTaskEdit__form--divHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalTaskEdit__form--close{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.modalTaskEdit__form--title {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: rgba(var(--fontColorGrey), 1);
+}
+
+.modalTaskEdit__form--label {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(var(--fontColorGrey), 1);
+}
+
+.modalTaskEdit__form--divDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modalTaskEdit__form div > input {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.3rem 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: rgba(var(--fontColorLightWhite));
+}
+
+.modalTaskEdit__form--divStatus {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.3em;
+}
+
+.modalTaskEdit__form .modalTaskEdit__form--taskDescription {
+    width: 100%;
+    padding: 0.3rem 1rem;
+    height: 6rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: rgba(var(--fontColorLightWhite));
+    resize: none;
+}
+
+.modalTaskEdit__form--taskCategory {
+    display: flex;
+    width: 100%;
+    height: 2.5rem;    
+}
+
+.modalTaskEdit__form--option {
+   font-weight: 400;
+   font-size: 1rem;
+   line-height: 1.18rem;
+   color: rgba(var(--fontColorGrey), 1);
+}
+
+.modalTaskEdit__form--divStatus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.modalTaskEdit__form--taskStatus {
+    max-width: 1.2rem;
+    height: 1rem;
+}
+
+.modalTaskEdit__form--labelStatus {
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgba(var(--fontColorGrey), 1);
+ }
+
+
+.modalTaskEdit__form--divButton {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.modalTaskEdit__form div > button {
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    font-weight: 400;
+    height: 2.2rem;
+
+}
+
+.modalTaskEdit__container > .modalTaskEdit__form--deleteButton {
+    width: 10rem;
+    max-width: 40%;
+    height: 2.2rem;
+    font-weight: 600;
+    background-color: rgba(var(--inputGreyBackground), 1);
+    color: rgba(var(--fontColorGrey), 1);
+    margin-right: 14em;
+    margin-top: -5.6em;
+    border: none;
+    display: fixed;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modalTaskEdit__container > .modalTaskEdit__form--deleteButton:hover {
+    border: 2px solid black;
+    box-shadow: 3px 3px gray 
+}
+
+.modalTaskEdit__form .modalTaskEdit__form--updateButton {
+    width: 15rem;
+    max-width: 50%;
+    background-color: rgba(var(--backGroundButtonSave), 1);
+    color: rgba(var(--pureWhite), 1);
+    justify-self: flex-end;
+
+}
+.modalTaskEdit__form .modalTaskEdit__form--updateButton:hover {
+    border: 2px solid black;
+    box-shadow: 3px 3px gray 
+}
